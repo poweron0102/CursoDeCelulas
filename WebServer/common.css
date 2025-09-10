@@ -1,0 +1,370 @@
+@keyframes animateBackground {
+    0% { background-position: -140px 0; }
+    50% { background-position: -50px 0; }
+    100% { background-position: -140px 0; }
+}
+
+/* ---------------------- */
+
+body {
+    background: url("https://cellsatwork-anime.com/assets/img/common/header_pc.jpg") no-repeat top left;
+    background-size: auto 100vh;
+    animation: animateBackground 25s linear infinite;
+    font-family: YakuHanJP, 'Noto Sans JP','Helvetica Neue', YuGothic, Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+    color: #ED1C24;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ED1C24;
+    color: white;
+    text-align: center;
+    padding: 5px 15px 5px 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    z-index: 100;
+}
+
+.login {
+    margin-right: 10px;
+}
+header button {
+    background-color: white;
+    color: #ED1C24;
+    border-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+header button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+header a {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5em;
+    position: fixed;
+    left: 300px;
+    top: 40px;
+    width: calc(100vw - 300px);
+    height: calc(100vh - 40px);
+    background: linear-gradient(to right, rgba(255, 255, 255, 98%), rgba(255, 255, 255, 1));
+    overflow-x: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(237, 28, 36, 0.65);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ED1C24;
+}
+
+
+/* -=-=-= Home =-=-=- */
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(237, 28, 36, 0.15);
+    height: 80%;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.curso h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+.curso p {
+    text-align: center;
+}
+
+/* -=-=-= Curso =-=-=- */
+
+.curse-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(237, 28, 36, 0.15);
+    height: 90%;
+    margin: 15px 0 15px 15px;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: center;
+}
+
+.curse-main iframe {
+    flex-shrink: 0;
+    all: initial;
+    width: 820px;
+    height: 480px;
+    margin: 5px;
+}
+
+#ExitCurse{
+    width: 100%;
+    height: 20px;
+    background-color: #ED1C24;
+    border-color: #ED1C24;
+    color: white;
+    border-radius: 0 0 0 10px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 0.5em;
+}
+#ExitCurse:hover {
+    background-color: #cc181f;
+}
+
+#moduleUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: max-content;
+    height: 90%;
+    padding: 5px;
+    margin: 15px 15px 15px 0;
+    border-radius: 0 10px 10px 0;
+    list-style-type: none;
+    background-color: rgba(237, 28, 36, 0.25);
+}
+
+.moduleLi {
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+.moduleLi:hover {
+    background-color: rgba(237, 28, 36, 0.1);
+}
+
+/* -=-=-= Modulo =-=-=- */
+
+.module-main {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(237, 28, 36, 0.15);
+    height: 90%;
+    width: 50vw;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.questao {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(237, 28, 36, 0.25);
+    height: 90%; /* Tamanho mínimo */
+    width: 20vw; /* Largura mínima */
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.options button {
+    width: 150px;
+    height: 75px;
+    background-color: #ED1C24;
+    color: white;
+    border-color: #f0f0f0;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/* -=-=-= Admin =-=-=- */
+
+.admin-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(237, 28, 36, 0.15);
+    height: 90%;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: center;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ED1C24;
+    cursor: pointer;
+}
+.custom-file-upload:hover {
+    background-color: #cc181f;
+}
+
+.custom-file-upload svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.admin-main button {
+    width: 90%;
+    height: 40px;
+    background-color: #ED1C24;
+    color: white;
+    border-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.admin-main button:hover {
+    background-color: #cc181f;
+}
+
+#user-list-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(237, 28, 36, 0.25);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#user-list-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    list-style-type: none;
+    overflow-y: scroll;
+}
+
+#user-list-ul li {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(237, 28, 36, 0.1);
+}
+
+#user-list-ul p {
+    width: 200px;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+#user-list-ul div {
+    display: flex;
+    flex-direction: row;
+}
+
+#user-list-ul li button {
+    width: 50px;
+    height: 50px;
+    background-color: #ED1C24;
+    color: white;
+    border-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#user-list-ul li button:hover {
+    background-color: #cc181f;
+}
+
+
+
+#user-list-ul li button svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
